@@ -4,7 +4,7 @@
 
 下图说明了IP协议在协议层级中的位置
 
-![protocol relationships](../RFC/images/ip-1.png)
+![protocol relationships](/images/ip-1.png)
 
 IP协议一方面向上与host-to-host协议进行通信另一方面向下与本地网络协议进行通信。这里的本地网络可能是指一栋建筑中的小型网络，也可能是一个向ARPENET之类的大型网络。
 
@@ -29,7 +29,7 @@ IP协议一方面向上与host-to-host协议进行通信另一方面向下与本
         internet模块检测到该数据包是发送给本机的一个应用，它将数据作为系统调用的响应传输给目标应用程序，并将发送的源地址与其它一次参数作为此次系统调用的结果的一部分。
 
 
-![transmission path](../RFC/images/ip-2.png)
+![transmission path](/images/ip-2.png)
 
 ## 2.3 Function Description
 
@@ -75,4 +75,4 @@ identification字段将一个数据包的分片与其它的数据包分片区别
 网关应用IP协议将数据包在网段间继续传输。网关还应用网关间协议（gateway to gateway protocol,GGP）来交换路由信息和其它一些网络控制信息
 
 在网关中，需要应用高层协议，并且GGP功能需要添加到IP模块中
-![](../RFC/images/ip-3.png)
+![](/images/ip-3.png)
